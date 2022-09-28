@@ -70,7 +70,7 @@ res.status(200).json({Success: "Updated successfully"})
 });
 app.delete("/:id", (req, res) => {
   const car_id = req.params.id;
-  Car.findByIdAndDelete({car_id}, (err, data)=>{
+  Car.findByIdAndDelete({_id: car_id}, (err, data)=>{
     if(err)  res.status(400).json({error: "something went wrong"})
     res.status(200).json({Success: "car deleted successfully"})
   })
