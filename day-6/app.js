@@ -8,8 +8,6 @@ kitty.save().then(()=>{console.log('cat saved')})
 .catch(()=>{
     console.log('something went wrong')
 })
-
-
 // const getData = async()=>{
 //  const data =  await  kitty.find();
 //  console.log(data)
